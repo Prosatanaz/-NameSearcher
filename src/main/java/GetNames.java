@@ -3,8 +3,8 @@ import org.jetbrains.annotations.NotNull;
 import java.util.*;
 
 
-public class StringParser {
-    public static ArrayList<String> StringParser(@NotNull ArrayList<String> dataArray) {
+public class GetNames {
+    public static ArrayList<String> Names(@NotNull ArrayList<String> dataArray) {
         ArrayList<String> names = new ArrayList<>();
         for (String data : dataArray) {
             String delimeter = " ";

@@ -15,14 +15,14 @@ public class Searcher {
         int maxEntry = 0;
         String result = null;
 
-        for (Map.Entry<String, Integer> val : entryOfNames.entrySet()) {
-            if (maxEntry < val.getValue()) {
-                result = val.getKey();
-                maxEntry = val.getValue();
+        for (Map.Entry<String, Integer> value : entryOfNames.entrySet()) {
+            if (maxEntry < value.getValue()) {
+                result = value.getKey();
+                maxEntry = value.getValue();
 
             }
-            if (val.getValue().equals(maxEntry)) {
-                System.out.println(val.getKey());
+            if (value.getValue().equals(maxEntry)) {
+                System.out.println(value.getKey());
             }
 
         }

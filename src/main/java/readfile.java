@@ -13,13 +13,12 @@ public class readfile {
         Path paths = Paths.get(fileName);
 
         Scanner scanner = new Scanner(paths);
-        ArrayList<String> dataArray = new ArrayList<>();
+        ArrayList<String> namesAndSurnames = new ArrayList<>();
         while (scanner.hasNext()) {
             String nameAndSurname = scanner.nextLine();
-            System.out.println(nameAndSurname);
-          dataArray.add(nameAndSurname);
+          namesAndSurnames.add(nameAndSurname);
         }
-        return dataArray;
+        return namesAndSurnames;
 
 
     }
